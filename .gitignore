@@ -1,0 +1,3 @@
+# Dotenv template
+#.env*
+!.env.example
