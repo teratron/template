@@ -1,3 +1,36 @@
+# IDE
+.vscode/
+.idea/
+
 # Dotenv template
 #.env* # UNCOMMENT!
-!.env.example
+!.env*.example
+
+# Misc
+*.txt
+*.log
+*.xls*
+*.tgz
+*.zip
+*.bak
+*.tmp
+*.*~*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Build artifacts
+dist/
+build/
+
+# Temporary folders
+*tmp*/
+*temp*/
+*cache*/
+
+# Skills
+#/.*/skills/ # UNCOMMENT!
+!/.*/skills/release
