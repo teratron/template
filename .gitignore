@@ -1,36 +1,117 @@
-# IDE
-.vscode/
-.idea/
+##############################################################################
+# Universal .gitignore template
+# Stack-specific patterns (node_modules/, vendor/, __pycache__/, etc.)
+# should be added per-project on top of this file.
+##############################################################################
 
-# Dotenv template
-#.env* # UNCOMMENT!
+# ── Environment variables ─────────────────────────────────────────────────────
+# Uncomment the next line once your .env files contain real secrets:
+#.env*
 !.env*.example
 
-# Misc
-*.txt
-*.log
-*.xls*
-*.tgz
-*.zip
-*.bak
-*.tmp
-*.*~*
+# ── Operating System ──────────────────────────────────────────────────────────
 
-# Runtime data
-pids
+## macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+.AppleDouble
+.apdisk
+
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+## Linux
+.directory
+.fuse_hidden*
+
+# ── Editors & IDEs ────────────────────────────────────────────────────────────
+
+## JetBrains (IntelliJ, GoLand, PyCharm, WebStorm, …)
+.idea/
+*.iml
+
+## Visual Studio Code
+# NOTE: consider committing .vscode/ for workspace settings & extensions.
+.vscode/
+
+## Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Vim / Neovim
+*.swp
+*.swo
+*.swn
+.netrwhist
+Session.vim
+
+## Emacs
+*~
+\#*\#
+.\#*
+
+## Sublime Text
+*.sublime-workspace
+
+# ── Build artifacts ───────────────────────────────────────────────────────────
+dist/
+build/
+out/
+target/
+# bin/ is intentionally omitted — many projects commit scripts in bin/.
+
+# ── Temporary & cache files ───────────────────────────────────────────────────
+*.tmp
+*.bak
+*.orig
+*.log
+*.*~
+
+# Exact directory names (avoids false positives from glob wildcards).
+tmp/
+temp/
+.cache/
+.temp/
+
+# ── Archives ──────────────────────────────────────────────────────────────────
+*.tgz
+*.tar.gz
+*.tar.bz2
+*.zip
+*.7z
+*.rar
+
+# ── Spreadsheets / generated reports ─────────────────────────────────────────
+*.xls
+*.xlsx
+*.xlsm
+
+# ── Runtime data ──────────────────────────────────────────────────────────────
+pids/
 *.pid
 *.seed
 *.pid.lock
 
-# Build artifacts
-dist/
-build/
+# ── Test coverage output ──────────────────────────────────────────────────────
+coverage/
+*.cover
+.nyc_output/
+htmlcov/
 
-# Temporary folders
-*tmp*/
-*temp*/
-*cache*/
-
-# Skills
-#/.*/skills/ # UNCOMMENT!
+# ── Agents / AI tools ─────────────────────────────────────────────────────────
+# Uncomment the next line to exclude all agent skill directories from the index:
+#/.*/skills/
 !/.*/skills/release
