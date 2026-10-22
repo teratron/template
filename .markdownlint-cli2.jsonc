@@ -1,9 +1,12 @@
 {
   // https://github.com/DavidAnson/markdownlint-cli2#markdownlint-cli2jsonc
   "ignores": [
+    "LICENSE",
     "CHANGELOG.md",
-    "node_modules/**",
+    "scratch/**",
+    "target/**",
     "vendor/**",
+    "node_modules/**",
     "docs/generated/**",
     ".github/PULL_REQUEST_TEMPLATE.md"
   ],
