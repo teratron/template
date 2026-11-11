@@ -9,6 +9,10 @@
 #.env*
 !.env*.example
 
+# MCP client config: paths are machine-specific, never commit the real file
+.mcp.json
+!.mcp.json.example
+
 # ── Operating System ──────────────────────────────────────────────────────────
 
 ## macOS
